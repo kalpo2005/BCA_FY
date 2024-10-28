@@ -11,6 +11,8 @@ int main ()
             scanf("%d",&a[i][j]);
         }
     }
+
+    // code by kalpesh bavaliya
     
             printf("----------------\n ");
 
