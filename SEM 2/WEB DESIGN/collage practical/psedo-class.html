@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Element Example</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    ,<style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .quote {
+            position: relative;
+            margin: 20px;
+            padding: 20px;
+            font-size: 1.5em;
+            font-style: italic;
+            color: #555;
+            border-left: 10px solid #ccc;
+            background: #f9f9f9;
+        }
+
+        .quote::before {
+            content: open-quote;
+            font-size: 2em;
+            color: #ccc;
+            position: absolute;
+            left: -1.5em;
+            top: 0;
+        }
+
+        .quote::after {
+            content: close-quote;
+            font-size: 2em;
+            color: #ccc;
+            position: absolute;
+            right: -1.5em;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <blockquote class="quote">
+        The only limit to our realization of tomorrow is our doubts of today.
+    </blockquote>
+</body>
+
+</html>
