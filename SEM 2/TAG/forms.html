@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+
+</head>
+
+<body>
+<div style="background-color:blue; margin-left: 10px;">
+    <h2>HTML form</h2>
+</div>
+<div style="background-color:blue; padding-left: 200px; ">
+    <h2>HTML form 2</h2>
+</div>
+
+<form action="kalpesh.php">
+    <label for="name">Name: </label>
+        <input type="text" id="name" name="myname">
+
+
+
+        <div>
+            Surname: <input type="text" name="surname">
+        </div>
+        <div>
+            Birthdate: <input type="date" name="birthdate">
+        </div>
+        <label for="emailid">Email </label>
+
+        <input type="email" id="emailid" name="Email">
+
+
+
+        <div>
+            Mobile Number : <input type="number" name="mobilenumber">
+        </div>
+
+
+        <div>
+            Are you student <input type="checkbox" name="Student" checked>
+        </div>
+        <div>
+            <label for="stander1"> Select your Stander :</label>
+            <select name="stander" id="stander1">
+                <option value="stander 1">stander 1</option>
+                <option value="stander 2">stander 2</option>
+                <option value="stander 3">stander 3</option>
+                <option value="stander 4">stander 4</option>
+                <option value="stander 5">stander 5</option>
+                <option value="stander 6">stander 6</option>
+            </select>
+        </div>
+        <div>
+            Gender : <input type="radio" name="gender" checked value="male"> male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other" > other
+        </div>
+        <div>
+            About your self
+            <br>
+            <textarea name="textarea" cols="25" rows="5"></textarea>
+
+        </div>
+        <div></div>
+        <div> <input type="submit" value="submit">
+
+            <input type="reset" value="reset">
+        </div>
+    </form>
+</body>
+
+</html>

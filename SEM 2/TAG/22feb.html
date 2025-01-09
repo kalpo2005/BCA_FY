@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px; /* Corrected spelling from paddinig to padding */
+        }
+
+        .nav {
+            background-color: black;
+        }
+
+        .nav ul {
+            color: white;
+            list-style: none;
+        }
+
+        .nav ul li {
+            display: inline;
+            position: relative; /* Added to make the dropdown relative to the parent li */
+        }
+
+        .nav ul li:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .drop {
+            display: none; /* Hide dropdown by default */
+            position: absolute;
+            background-color: black; /* Added background color */
+        }
+
+        .drop ul {
+            display: block;
+        }
+
+        .nav ul li:hover .drop {
+            display: block; /* Show dropdown on hover */
+            margin-left:   50px;
+            padding: 20px;
+        }
+
+        .drop ul li {
+            display: block;
+        }
+
+        .drop ul li:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>bavaliya</li>
+            <li>kalpesh
+                <div class="drop">
+                    <ul>
+                        <li>kkk</li>
+                        <li>kk</li>
+                        <li>k</li>
+                    </ul>
+                </div>
+            </li>
+            <li>botad</li>
+        </ul>
+    </div>
+</body>
+
+</html>
